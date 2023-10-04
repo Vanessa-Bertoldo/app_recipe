@@ -3,6 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="60dp"
     android:orientation="horizontal"
-    android:padding="12dp">
+    android:padding="12dp"
+    android:background="@color/color_tolbar">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:src="@drawable/menu_24" />
+
+    <TextView
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:text="Tasks"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
 
 </LinearLayout>
