@@ -11,42 +11,6 @@
         android:layout_height="100dp"
         android:orientation="horizontal"
         android:background="@drawable/bookrec">
-        
-        <LinearLayout
-            android:layout_width="8dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="8dp"
-            android:layout_height="match_parent"
-            android:layout_weight="3">
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="150px"
-                android:layout_height="match_parent"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="8dp"
-            android:layout_height="match_parent"
-            android:layout_weight="3">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text=""
-                android:textColor="@color/white"
-                android:textSize="25dp"
-                android:gravity="center_vertical"
-                android:textStyle="bold"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
     </LinearLayout>
 
     <LinearLayout
@@ -61,12 +25,12 @@
             android:layout_weight="1"
             android:padding="12dp"
             android:layout_marginStart="16dp"
-            android:text="Home"
+            android:text="Inicio"
             android:textSize="16dp"/>
 
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="48dp"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
             android:layout_marginEnd="48px"
             android:src="@drawable/baseline_home_24" />
 
@@ -83,57 +47,81 @@
                 android:layout_weight="1"
                 android:padding="12dp"
                 android:layout_marginStart="16dp"
-                android:text="Home2"
+                android:text="Sobre"
+                android:textSize="16dp"
+                android:onClick="aboutOpenFragment"/>
+
+         <ImageView
+             android:layout_width="30dp"
+             android:layout_height="45dp"
+             android:layout_marginEnd="48px"
+             android:src="@drawable/question_24" />
+
+     </LinearLayout>
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:layout_marginStart="16dp"
+                android:text="Receitas dia"
                 android:textSize="16dp"/>
 
          <ImageView
-             android:layout_width="70dp"
-             android:layout_height="48dp"
+             android:layout_width="30dp"
+             android:layout_height="40dp"
              android:layout_marginEnd="48px"
-             android:src="@drawable/baseline_home_24" />
-
+             android:src="@drawable/restaurant_24" />
      </LinearLayout>
-         <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:padding="12dp"
-                    android:layout_marginStart="16dp"
-                    android:text="Home3"
-                    android:textSize="16dp"/>
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="48dp"
-                    android:layout_marginEnd="48px"
-                    android:src="@drawable/baseline_home_24"/>
-
-            </LinearLayout>
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
-
-        <TextView
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="12dp"
-            android:layout_marginStart="16dp"
-            android:text="Logout"
-            android:textSize="16dp"/>
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="48px"
-            android:src="@drawable/baseline_home_24"/>
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:layout_marginStart="16dp"
+                android:text="Compartilhar sua receita"
+                android:textSize="16dp"/>
+
+         <ImageView
+             android:layout_width="30dp"
+             android:layout_height="40dp"
+             android:layout_marginEnd="48px"
+             android:src="@drawable/send_24" />
+     </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:layout_marginStart="16dp"
+                android:text="Sair"
+                android:textSize="16dp"/>
+
+         <ImageView
+             android:layout_width="30dp"
+             android:layout_height="40dp"
+             android:layout_marginEnd="48px"
+             android:src="@drawable/close_24" />
+     </LinearLayout>
+
+
 
 </LinearLayout>
