@@ -1,9 +1,11 @@
 package com.example.app_tasks.activity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -70,15 +72,38 @@ public class MainActivity extends AppCompatActivity {
         reciveSend();
     }
 
+    public void logoutItemList(View view){
+        logoutMenu(MainActivity.this);
+    }
     public void reciveSend(){
-        Recipe r = new Recipe("Guacamole", "Igredientes", R.drawable.guacamole);
+        Recipe r = new Recipe("Panqueca salguada", "Uma ótia opção de pré-treino", R.drawable.panqu);
         this.recipe.add(r);
-        r = new Recipe("Paqueca", "Igredientes", R.drawable.panqu);
+        r = new Recipe("Salada Gourmet", "Salada completa com excelente fontes de energia", R.drawable.salad);
         this.recipe.add(r);
-        r = new Recipe("Paqueca", "Igredientes", R.drawable.panqu);
+        r = new Recipe("Panqueca com blueberry", "Excelente opção para um café da mnhã em familia", R.drawable.panqueca);
         this.recipe.add(r);
-        r = new Recipe("Paqueca", "Igredientes", R.drawable.panqu);
+        r = new Recipe("Biscoito de aveia com banana", "Um lanchinho da tarde espetacular não pode faltar", R.drawable.biscoito);
         this.recipe.add(r);
+
+    }
+
+    private void logoutMenu(MainActivity mainActivity){
+        AlertDialog.Builder builder = new AlertDialog.Builder(mainActivity);
+        builder.setTitle("Sair");
+        builder.setMessage("Deseja sair da aplicação?");
+        builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                finish();
+            }
+        });
+        builder.setNegativeButton("Não", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.dismiss();
+            }
+        });
+        builder.show();
     }
 
 }

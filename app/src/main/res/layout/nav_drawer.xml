@@ -12,29 +12,6 @@
         android:orientation="horizontal"
         android:background="@drawable/bookrec">
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="12dp"
-            android:layout_marginStart="16dp"
-            android:text="Inicio"
-            android:textSize="16dp"/>
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="40dp"
-            android:layout_marginEnd="48px"
-            android:src="@drawable/baseline_home_24" />
-
-    </LinearLayout>
      <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -113,7 +90,8 @@
                 android:padding="12dp"
                 android:layout_marginStart="16dp"
                 android:text="Sair"
-                android:textSize="16dp"/>
+                android:textSize="16dp"
+                android:onClick="logoutItemList"/>
 
          <ImageView
              android:layout_width="30dp"

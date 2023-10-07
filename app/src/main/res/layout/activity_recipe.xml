@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="6dp"
-    android:elevation="6dp">
+    android:elevation="6dp"
+    android:id="@+id/cardViewRecipes">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +24,8 @@
                 android:text="Salada grega"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                />
             <ImageView
                 android:id="@+id/imageRecipe"
                 android:layout_width="match_parent"
@@ -35,7 +37,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Ingredientes"
-                android:layout_marginTop="16dp"/>
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>
